@@ -237,14 +237,14 @@ def player_move_is_valid(board: list[list[str]], x: int, y: int) -> bool:
 # functie care verifica daca jocul este incheiat si afiseaza un mesaj conform rezutatului. Returneaza 1 in caz ca jocul
 # s-a terminat. 0 altfel
 def game_over_with_message(score: int) -> int:
-    if score == -100:
+    if score == -10:
         print(Fore.GREEN + r"""
                  \o/
                   |
                  / \
     BRAVO!AI CASTIGAT! AI BATUT AI_UL!!""" + Style.RESET_ALL)
         return 1
-    if score == 100:
+    if score == 10:
         print(Fore.RED + r"""
              __________
            /            \
